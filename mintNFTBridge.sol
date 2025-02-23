@@ -4,7 +4,7 @@ pragma solidity ^0.8.0;
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-// 假设Solana链使用了某种跨链桥发送跨链请求，
+// 因为Solana链使用了某种跨链桥发送跨链请求，
 // 我们将一个简单的Solidity合约与Solana上的跨链通信对接。
 contract CrossChainNFT is ERC721, Ownable {
     uint256 public nextTokenId;

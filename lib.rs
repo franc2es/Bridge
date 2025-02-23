@@ -9,7 +9,7 @@ use solana_program::{
 
 use metaplex_token_metadata::state::{Metadata, MetadataAccount};
 
-// 这是一个简化的示例，销毁NFT并创建跨链请求
+// 一个简化的示例，销毁NFT并创建跨链请求
 pub fn process_nft_burn(
     program_id: &Pubkey,
     accounts: &[AccountInfo],
@@ -40,7 +40,7 @@ pub fn process_nft_burn(
     // 跨链请求（向目标链发送信息）
     msg!("Sending cross-chain request to: {}", bridge_program_pubkey);
 
-    // 你需要实现通过Solana系统调用跨链桥（如Wormhole等）发送跨链请求的逻辑。
+    // 需要实现通过Solana系统调用跨链桥（如Wormhole等）发送跨链请求的逻辑。
 
     Ok(())
 }
